@@ -32,6 +32,9 @@ body.dark-mode {
     color: white;
 }
 
+body p{
+    font-size: small;
+}
 
 .navbars2{
     display: none;
@@ -114,11 +117,6 @@ body.dark-mode {
     width: 70%;
 }
 
-.bioh4{
-    transform: translate(180);
-    transition: ease-in-out 1s;
-}
-
 .c-me ul{
     display: flex;
 }
@@ -162,13 +160,18 @@ body.dark-mode {
 
 .abm{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding-bottom: 20px;
 }
 
 .abm div p{
     padding-bottom: 15px;
+    font-size: small;
+}
+
+.abm1{
+    padding: 15px 0px;
 }
 
 .li1{
@@ -209,10 +212,11 @@ body.dark-mode {
 }
 
 .skill-set{
-    margin: 10px 0px 10px 10px ;
+    margin: 10px 1px ;
     border-radius: 10px;
     padding: 5px;
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -222,14 +226,14 @@ body.dark-mode {
     padding: 5px;
     background-color: chocolate;
     cursor: pointer;
+    font-size: small;
 }
 
 .skill{
     padding: 10px;
     background-color:rgb(208, 154, 225);
     border: 1px;
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
 
 .label {
@@ -372,8 +376,9 @@ body.dark-mode {
     border-radius: 2px;
 }
 
-.pro1 h4{
+.pro1 h5{
     padding-left: 15px;
+    font-size: medium;
 }
 
 .pro1 p{
@@ -404,6 +409,7 @@ body.dark-mode {
 
 .Blog p{
     padding-bottom: 10px;
+    font-size: small;
 }
 
 /* Contact Section */
@@ -455,6 +461,8 @@ label input{
 
 form button{
     margin:10px 0px;
+    background-color: white;
+    border: 0.2px solid black;
 }
 
 footer{
@@ -553,6 +561,10 @@ footer div a{
     }
 
     .pro{
+        grid-template-columns: 1fr;
+    }
+
+    .abm{
         grid-template-columns: 1fr;
     }
 }
